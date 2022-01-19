@@ -1,5 +1,5 @@
 # CSB_Meet_Automation
-Bot for joining online classes at the right time (This bot is optimized for S4 CSB students -  JECC).
+Bot for joining online classes at the right time (This bot is optimized for S5 CSB students -  JECC).
 
 ## Refer this video for a more detailed explanation of using this bot.
 [YouTube Video - Click Here](https://youtu.be/mx6fBHsQoXk)
