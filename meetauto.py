@@ -203,8 +203,8 @@ if __name__ == "__main__":
           
 """
        )
-	authuser = input("Enter Authuser Count : ")  # Authuser Number
 	lineseprator()
+	authuser = input("Enter Authuser Count : ")  # Authuser Number
 	labno = input("Enter \n 1 for SS lab 2 for DBMS lab : ")
 	lineseprator()
 	print("!!!!!! BOT IS WORKING DO NOT CLOSE THE WINDOW/TERMINAL !!!!!!! ")
