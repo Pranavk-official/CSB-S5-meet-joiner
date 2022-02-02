@@ -22,7 +22,7 @@ def idletime():
 	join() #Supposed to be after meet links! But this serves the purpose!
 	print("Program going idle until next class")
 	time.sleep(2640)
-	print("This class has ended checking for availability of next class")
+	print("\nThis class has ended checking for availability of next class")
 	lineseprator()
 	return
 
@@ -33,7 +33,7 @@ def lineseprator():
 
 #Print Line to seprate code-------------------------------------------------------------------------
 def endclass():
-	print("Classes have ended for today.Have a good day")
+	print("\n\nClasses have ended for today.Have a good day")
 	quit()
 
 # Join Class Code-------------------------------------------------------------------------
@@ -62,6 +62,8 @@ def joinnowbutton():
 # mm      dqp-muhy-fde
 # mss     isf-nnjj-joj
 # dm      nec-ycwt-ymn
+# lab1    pfo-jkjh-czb
+# lab2	  cuv-ahmr-srg
 # '''
 
 def ss():
@@ -91,15 +93,24 @@ def mm():
 def mss():
 	linkco="https://meet.google.com/lookup/isf-nnjj-joj?authuser="+str(authuser)
 	webbrowser.open_new(linkco)
-	print("Entering Management of Syste, By Lufiya Ma'am")
+	print("Entering Management of System, By Lufiya Ma'am")
 	idletime()
 
 def dm():
 	linkco="https://meet.google.com/lookup/nec-ycwt-ymn?authuser="+str(authuser)
 	webbrowser.open_new(linkco)
-	print("Entering Management of Syste, By Kastro Sir")
+	print("Entering Disaster Management, By Kastro Sir")
 	idletime()
 
+def lab():
+	if labno == 1:
+		linkco="https://meet.google.com/lookup/pfo-jkjh-czb?authuser="+str(authuser)
+	if labno == 2:
+		linkco="https://meet.google.com/lookup/nec-ycwt-ymn?authuser="+str(authuser)
+
+	webbrowser.open_new(linkco)
+	print("Entering LAB")
+	idletime()
 
 #The time function in timetable---------------------------------------
 def classtime(hr1,hr2,hr3,hr4):
@@ -118,7 +129,7 @@ def classtime(hr1,hr2,hr3,hr4):
 				hr2()
 			#break
 			if now.strftime("%H%M%S")=="095000" or now.strftime("%H%M%S")=="105000" or now.strftime("%H%M%S")=="115000" or now.strftime("%H%M%S")=="125000":
-				print("Break for 10 min - Program idle for 10 minutes")
+				print("\nBreak for 10 min - Program idle for 10 minutes")
 				print("Do not turn off the PC , if turning off, restart the program before next class")
 				time.sleep(500)
 			#hour3
@@ -193,6 +204,8 @@ if __name__ == "__main__":
 """
        )
 	authuser = input("Enter Authuser Count : ")  # Authuser Number
+	lineseprator()
+	labno = input("Enter \n 1 for SS lab 2 for DBMS lab : ")
 	lineseprator()
 	print("!!!!!! BOT IS WORKING DO NOT CLOSE THE WINDOW/TERMINAL !!!!!!! ")
 	lineseprator()
